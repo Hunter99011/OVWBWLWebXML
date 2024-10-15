@@ -30,7 +30,7 @@
 
         <xs:complexType name="idopontTipus">
             <xs:sequence>
-                <xs:element name="nap" type="napTipus"/>
+                <xs:element name="nap" type="xs:string"/>
                 <xs:element name="tol" type="xs:integer"/>
                 <xs:element name="ig" type="xs:integer"/>
             </xs:sequence>
