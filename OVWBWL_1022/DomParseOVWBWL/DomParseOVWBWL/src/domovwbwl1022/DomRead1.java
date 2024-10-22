@@ -26,7 +26,7 @@ public class DomRead1 {
 
         System.out.println("Root element: " + doc.getDocumentElement().getNodeName());
 
-        NodeList nList = doc.getElementsByTagName("orarend");
+        NodeList nList = doc.getElementsByTagName("ora");
 
         for (int i = 0; i < nList.getLength(); i++) {
             Node nNode = nList.item(i);
@@ -40,19 +40,27 @@ public class DomRead1 {
                 String tipus = elem.getAttribute("tipus");
 
                 Node node1 = elem.getElementsByTagName("targy").item(0);
-                String fname = node1.getTextContent();
+                String oname = node1.getTextContent();
 
                 Node node2 = elem.getElementsByTagName("idopont").item(0);
-                String lname = node2.getTextContent();
+                String idopont = node2.getTextContent();
 
                 Node node3 = elem.getElementsByTagName("helyszin").item(0);
-                String pname = node3.getTextContent();
+                String helyszin = node3.getTextContent();
+
+                Node node4 = elem.getElementsByTagName("oktato").item(0);
+                String oktato = node4.getTextContent();
+
+                Node node5 = elem.getElementsByTagName("szak").item(0);
+                String szak = node5.getTextContent();
 
                 System.out.printf("Óra id: %s%n", uid);
                 System.out.printf("Óra típusa: %s%n", tipus);
-                System.out.printf("First name: %s%n", fname);
-                System.out.printf("Last name: %s%n", lname);
-                System.out.printf("Profession: %s%n", pname);
+                System.out.printf("Óra neve: %s%n", oname);
+                System.out.printf("Óra időpontja: %s%n", idopont);
+                System.out.printf("Helyszín: %s%n", helyszin);
+                System.out.printf("Oktató: %s%n", oktato);
+                System.out.printf("Szak: %s%n", szak);
             }
         }
     }
