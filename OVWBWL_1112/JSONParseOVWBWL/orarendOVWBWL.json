@@ -1,0 +1,136 @@
+{
+	"orarend": {
+		"ora": [
+			{
+				"targy": "Angol Szaknyelv I.",
+				"idopont": {
+					"nap": "Hétfő",
+					"tol": "12",
+					"ig": "14"
+				},
+				"helyszin": "A/5 106.",
+				"oktato": "Pásztor Krisztina",
+				"szak": "Mérnökinformatikus BSc.",
+				"_id": "1",
+				"_tipus": "előadás"
+			},
+			{
+				"targy": "Mobil Programozás alapok",
+				"idopont": {
+					"nap": "Hétfő",
+					"tol": "16",
+					"ig": "18"
+				},
+				"helyszin": "In/101",
+				"oktato": "Agárdi Anita",
+				"szak": "Mérnökinformatikus BSc.",
+				"_id": "2",
+				"_tipus": "előadás"
+			},
+			{
+				"targy": "Multimédia Rendszerek",
+				"idopont": {
+					"nap": "Kedd",
+					"tol": "12",
+					"ig": "14"
+				},
+				"helyszin": "In/200",
+				"oktato": "Dr. Varga Attila Károly",
+				"szak": "Mérnökinformatikus BSc.",
+				"_id": "3",
+				"_tipus": "előadás"
+			},
+			{
+				"targy": "Webes adatkezelő környezetek",
+				"idopont": {
+					"nap": "Kedd",
+					"tol": "16",
+					"ig": "18"
+				},
+				"helyszin": "In/103",
+				"oktato": "Dr. Bednarik László",
+				"szak": "Mérnökinformatikus BSc.",
+				"_id": "4",
+				"_tipus": "gyakorlat"
+			},
+			{
+				"targy": "UNIX rendszergazda",
+				"idopont": {
+					"nap": "Kedd",
+					"tol": "17",
+					"ig": "19"
+				},
+				"helyszin": "In/202",
+				"oktato": "Dr. Baksa Attila",
+				"szak": "Mérnökinformatikus BSc.",
+				"_id": "5",
+				"_tipus": "gyakorlat"
+			},
+			{
+				"targy": "UNIX rendszergazda",
+				"idopont": {
+					"nap": "Szerda",
+					"tol": "8",
+					"ig": "10"
+				},
+				"helyszin": "In/102",
+				"oktato": "Dr. Baksa Attila",
+				"szak": "Mérnökinformatikus BSc.",
+				"_id": "6",
+				"_tipus": "előadás"
+			},
+			{
+				"targy": "Mesterséges Intelligencia",
+				"idopont": {
+					"nap": "Szerda",
+					"tol": "10",
+					"ig": "12"
+				},
+				"helyszin": "A1 X.",
+				"oktato": "Fazekas Levente",
+				"szak": "Mérnökinformatikus BSc.",
+				"_id": "7",
+				"_tipus": "előadás"
+			},
+			{
+				"targy": "Webes adatkezelő környezetek",
+				"idopont": {
+					"nap": "Szerda",
+					"tol": "14",
+					"ig": "16"
+				},
+				"helyszin": "In/102.",
+				"oktato": "Dr. Kovács László",
+				"szak": "Mérnökinformatikus BSc.",
+				"_id": "8",
+				"_tipus": "előadás"
+			},
+			{
+				"targy": "Multimédia Rendszerek",
+				"idopont": {
+					"nap": "Szerda",
+					"tol": "14",
+					"ig": "16"
+				},
+				"helyszin": "In/200",
+				"oktato": "Dr. Varga Attila Károly",
+				"szak": "Mérnökinformatikus BSc.",
+				"_id": "9",
+				"_tipus": "gyakorlat"
+			},
+			{
+				"targy": "Mesterséges Intelligencia",
+				"idopont": {
+					"nap": "Szerda",
+					"tol": "16",
+					"ig": "18"
+				},
+				"helyszin": "A1/XXXII.",
+				"oktato": "Pásztor Krisztina",
+				"szak": "Mérnökinformatikus BSc.",
+				"_id": "10",
+				"_tipus": "gyakorlat"
+			}
+		]
+	}
+}
