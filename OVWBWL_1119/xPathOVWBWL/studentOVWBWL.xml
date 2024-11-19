@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<class xmlns="DOMOVWBWL">
+  <student id="1">
+    <keresztnev>Peter</keresztnev>
+    <vezeteknev>Nagy</vezeteknev>
+    <becenev>Peti</becenev>
+    <kor>26</kor>
+  </student>
+  <student id="2">
+    <keresztnev>Piroska</keresztnev>
+    <vezeteknev>Vigh</vezeteknev>
+    <becenev>Piros</becenev>
+    <kor>34</kor>
+  </student>
+  <student id="3">
+    <keresztnev>Ferenc</keresztnev>
+    <vezeteknev>Kiss</vezeteknev>
+    <becenev>Feri</becenev>
+    <kor>21</kor>
+  </student>
+</class>
