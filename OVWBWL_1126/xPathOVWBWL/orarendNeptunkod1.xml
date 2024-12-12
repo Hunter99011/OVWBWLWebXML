@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<orarend>
+        
+    <ora id="1" tipus="előadás">
+                
+        <targy>Angol Szaknyelv I. (KM)</targy>
+                
+        <idopont>
+                        
+            <nap>Hétfő</nap>
+                        
+            <tol>12</tol>
+                        
+            <ig>14</ig>
+                    
+        </idopont>
+                
+        <helyszin>A/5 106.</helyszin>
+                
+        <oktato>Pásztor Krisztina</oktato>
+                
+        <szak>Informatikai Mérnöki MSc.</szak>
+            
+    </ora>
+        
+    <ora id="2" tipus="előadás">
+                
+        <targy>Mobil Programozás alapok (KM)</targy>
+                
+        <idopont>
+                        
+            <nap>Hétfő</nap>
+                        
+            <tol>16</tol>
+                        
+            <ig>18</ig>
+                    
+        </idopont>
+                
+        <helyszin>In/101</helyszin>
+                
+        <oktato>Agárdi Anita</oktato>
+                
+        <szak>Mérnökinformatikus BSc.</szak>
+            
+    </ora>
+        
+    <ora id="3" tipus="előadás">
+                
+        <targy>Multimédia Rendszerek (KM)</targy>
+                
+        <idopont>
+                        
+            <nap>Kedd</nap>
+                        
+            <tol>12</tol>
+                        
+            <ig>14</ig>
+                    
+        </idopont>
+                
+        <helyszin>XXXVII</helyszin>
+                
+        <oktato>Dr. Varga Attila Károly</oktato>
+                
+        <szak>Mérnökinformatikus BSc.</szak>
+            
+    </ora>
+        
+    <ora id="4" tipus="gyakorlat">
+                
+        <targy>Webes adatkezelő környezetek (KM)</targy>
+                
+        <idopont>
+                        
+            <nap>Kedd</nap>
+                        
+            <tol>16</tol>
+                        
+            <ig>18</ig>
+                    
+        </idopont>
+                
+        <helyszin>In/103</helyszin>
+                
+        <oktato>Dr. Bednarik László</oktato>
+                
+        <szak>Mérnökinformatikus BSc.</szak>
+            
+    </ora>
+        
+    <ora id="5" tipus="gyakorlat">
+                
+        <targy>UNIX rendszergazda (KM)</targy>
+                
+        <idopont>
+                        
+            <nap>Kedd</nap>
+                        
+            <tol>17</tol>
+                        
+            <ig>19</ig>
+                    
+        </idopont>
+                
+        <helyszin>In/202</helyszin>
+                
+        <oktato>Dr. Baksa Attila</oktato>
+                
+        <szak>Mérnökinformatikus BSc.</szak>
+            
+    </ora>
+        
+    <ora id="6" tipus="előadás">
+                
+        <targy>UNIX rendszergazda (KM)</targy>
+                
+        <idopont>
+                        
+            <nap>Szerda</nap>
+                        
+            <tol>8</tol>
+                        
+            <ig>10</ig>
+                    
+        </idopont>
+                
+        <helyszin>In/102</helyszin>
+                
+        <oktato>Dr. Baksa Attila</oktato>
+                
+        <szak>Mérnökinformatikus BSc.</szak>
+            
+    </ora>
+        
+    <ora id="7" tipus="előadás">
+                
+        <targy>Mesterséges Intelligencia (KM)</targy>
+                
+        <idopont>
+                        
+            <nap>Szerda</nap>
+                        
+            <tol>10</tol>
+                        
+            <ig>12</ig>
+                    
+        </idopont>
+                
+        <helyszin>A1 X.</helyszin>
+                
+        <oktato>Fazekas Levente</oktato>
+                
+        <szak>Mérnökinformatikus BSc.</szak>
+            
+    </ora>
+            
+    <ora id="8" tipus="előadás">
+                
+        <targy>Webes adatkezelő környezetek (KM)</targy>
+                
+        <idopont>
+                        
+            <nap>Szerda</nap>
+                        
+            <tol>14</tol>
+                        
+            <ig>16</ig>
+                    
+        </idopont>
+                
+        <helyszin>In/102.</helyszin>
+                
+        <oktato>Dr. Kovács László</oktato>
+                
+        <szak>Mérnökinformatikus BSc.</szak>
+            
+    </ora>
+        
+    <ora id="9" tipus="gyakorlat">
+                
+        <targy>Multimédia Rendszerek (KM)</targy>
+                
+        <idopont>
+                        
+            <nap>Szerda</nap>
+                        
+            <tol>14</tol>
+                        
+            <ig>16</ig>
+                    
+        </idopont>
+                
+        <helyszin>In/200</helyszin>
+                
+        <oktato>Dr. Varga Attila Károly</oktato>
+                
+        <szak>Mérnökinformatikus BSc.</szak>
+            
+    </ora>
+        
+    <ora id="10" tipus="gyakorlat">
+                
+        <targy>Mesterséges Intelligencia (KM)</targy>
+                
+        <idopont>
+                        
+            <nap>Szerda</nap>
+                        
+            <tol>16</tol>
+                        
+            <ig>18</ig>
+                    
+        </idopont>
+                
+        <helyszin>A1/XXXII.</helyszin>
+                
+        <oktato>Pásztor Krisztina</oktato>
+                
+        <szak>Mérnökinformatikus BSc.</szak>
+            
+    </ora>
+    
+</orarend>

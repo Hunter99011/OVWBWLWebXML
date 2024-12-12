@@ -17,7 +17,7 @@ public class SaXOVWBWL {
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser saxParser = factory.newSAXParser();
             SaXHandler handler = new SaXHandler();
-            saxParser.parse("C:\\KMgit\\OVWBWLWebXML\\OVWBWL_1203\\SaXOVWBWL\\OVWBWL_kurzusfelvetel.xml", handler);
+            saxParser.parse("OVWBWL_kurzusfelvetel.xml", handler);
         } catch (Exception e) {
             e.printStackTrace();
         }

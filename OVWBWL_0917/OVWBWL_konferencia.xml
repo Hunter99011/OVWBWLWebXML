@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<konferenciák>
+    <konferencia id="0">
+        <cim>AI Technológiák</cim>
+        <hallgatok>
+            <hallgato id="1">
+                <nev>Kurucz Milán</nev>
+                <lakcim>XYZ utca 3</lakcim>
+            </hallgato>
+        </hallgatok>
+        <helyszin>Siófok, Arany János 2</helyszin>
+        <eloado>
+            <nev>Kis Grofó</nev>
+            <adoszam>345-678-921</adoszam>
+            <lakcim>Budapest, Halmaj utca 3.</lakcim>
+        </eloado>
+        <datum>2024-10-11</datum>
+    </konferencia>
+</konferenciák>
