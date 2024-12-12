@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<KonyvtariRendszer xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaOVWBWL.xsd">
+    <Konyvek>
+        <Konyv>
+            <KonyvID>1</KonyvID>
+            <Cim>A világ története</Cim>
+            <Szerzo>Erkel Mária</Szerzo>
+            <KiadasEve>1989</KiadasEve>
+        </Konyv>
+        <Konyv>
+            <KonyvID>2</KonyvID>
+            <Cim>Űrutazás alapjai</Cim>
+            <Szerzo>Alma Aladár</Szerzo>
+            <KiadasEve>2001</KiadasEve>
+        </Konyv>
+        <Konyv>
+            <KonyvID>3</KonyvID>
+            <Cim>Matematika alapjai</Cim>
+            <Szerzo>Gyári Ferenc</Szerzo>
+            <KiadasEve>1977</KiadasEve>
+        </Konyv>
+    </Konyvek>
+    <Peldanyok>
+        <Peldany>
+            <LeltariSzam>001</LeltariSzam>
+            <KonyvID>1</KonyvID>
+            <Allapot>Jó</Allapot>
+            <Polcszam>101A</Polcszam>
+            <Kolcsonozheto>igen</Kolcsonozheto>
+        </Peldany>
+        <Peldany>
+            <LeltariSzam>002</LeltariSzam>
+            <KonyvID>2</KonyvID>
+            <Allapot>Közepes</Allapot>
+            <Polcszam>202B</Polcszam>
+            <Kolcsonozheto>nem</Kolcsonozheto>
+        </Peldany>
+        <Peldany>
+            <LeltariSzam>003</LeltariSzam>
+            <KonyvID>2</KonyvID>
+            <Allapot>Jó</Allapot>
+            <Polcszam>202C</Polcszam>
+            <Kolcsonozheto>igen</Kolcsonozheto>
+        </Peldany>
+        <Peldany>
+            <LeltariSzam>004</LeltariSzam>
+            <KonyvID>3</KonyvID>
+            <Allapot>Kiváló</Allapot>
+            <Polcszam>303C</Polcszam>
+            <Kolcsonozheto>igen</Kolcsonozheto>
+        </Peldany>
+    </Peldanyok>
+    <Kiadok>
+        <Kiado>
+            <KiadoID>1001</KiadoID>
+            <Nev>Mentor Kiadó</Nev>
+            <Szekhely>Budapest</Szekhely>
+            <Telefonszam>+36 1 234 5678</Telefonszam>
+            <Telefonszam>+36 1 356 3765</Telefonszam>
+        </Kiado>
+        <Kiado>
+            <KiadoID>1002</KiadoID>
+            <Nev>Űrtudományi Kiadó</Nev>
+            <Szekhely>Debrecen</Szekhely>
+            <Telefonszam>+36 52 345 6789</Telefonszam>
+        </Kiado>
+        <Kiado>
+            <KiadoID>1003</KiadoID>
+            <Nev>Amicus Kiadó</Nev>
+            <Szekhely>Pécs</Szekhely>
+            <Telefonszam>+36 72 456 7890</Telefonszam>
+            <Telefonszam>+36 98 346 3169</Telefonszam>
+        </Kiado>
+    </Kiadok>
+    <Olvasok>
+        <Olvaso>
+            <OlvasoID>101</OlvasoID>
+            <Nev>
+                <Vezeteknev>Kovács</Vezeteknev>
+                <Keresztnev>Péter</Keresztnev>
+            </Nev>
+            <Lakcim>Budapest, Fő utca 1.</Lakcim>
+            <Telefonszam>+36 30 123 4567</Telefonszam>
+            <Telefonszam>+36 20 342 1927</Telefonszam>
+        </Olvaso>
+        <Olvaso>
+            <OlvasoID>102</OlvasoID>
+            <Nev>
+                <Vezeteknev>Nagy</Vezeteknev>
+                <Keresztnev>Anna</Keresztnev>
+            </Nev>
+            <Lakcim>Debrecen, Kossuth utca 2.</Lakcim>
+            <Telefonszam>+36 30 234 5678</Telefonszam>
+        </Olvaso>
+        <Olvaso>
+            <OlvasoID>103</OlvasoID>
+            <Nev>
+                <Vezeteknev>Tóth</Vezeteknev>
+                <Keresztnev>János</Keresztnev>
+            </Nev>
+            <Lakcim>Pécs, Rákóczi út 3.</Lakcim>
+            <Telefonszam>+36 30 345 6789</Telefonszam>
+        </Olvaso>
+    </Olvasok>
+    <Tagdijak>
+        <Tagdij ev="2023">
+            <TagdijID>100</TagdijID>
+            <Osszeg>1000</Osszeg>
+            <Kedvezmeny>200</Kedvezmeny>
+        </Tagdij>
+    </Tagdijak>
+    <Kiadasok>
+        <Kiadja>
+            <KonyvID>1</KonyvID>
+            <KiadoID>1001</KiadoID>
+        </Kiadja>
+        <Kiadja>
+            <KonyvID>2</KonyvID>
+            <KiadoID>1002</KiadoID>
+        </Kiadja>
+        <Kiadja>
+            <KonyvID>3</KonyvID>
+            <KiadoID>1003</KiadoID>
+        </Kiadja>
+    </Kiadasok>
+    <Kolcsonzesek>
+        <Kolcsonzi>
+            <KolcsonzesID>001</KolcsonzesID>
+            <OlvasoID>101</OlvasoID>
+            <LeltariSzam>001</LeltariSzam>
+            <Datum>2024-01-01</Datum>
+            <Visszahozva>2024-01-10</Visszahozva>
+            <Buntetes>0</Buntetes>
+        </Kolcsonzi>
+        <Kolcsonzi>
+            <KolcsonzesID>002</KolcsonzesID>
+            <OlvasoID>102</OlvasoID>
+            <LeltariSzam>002</LeltariSzam>
+            <Datum>2024-01-05</Datum>
+            <Visszahozva>2024-01-15</Visszahozva>
+            <Buntetes>500</Buntetes>
+        </Kolcsonzi>
+        <Kolcsonzi>
+            <KolcsonzesID>003</KolcsonzesID>
+            <OlvasoID>103</OlvasoID>
+            <LeltariSzam>003</LeltariSzam>
+            <Datum>2024-01-10</Datum>
+            <Visszahozva>2024-01-20</Visszahozva>
+            <Buntetes>0</Buntetes>
+        </Kolcsonzi>
+    </Kolcsonzesek>
+    <Fizetesek>
+        <Fizetes>
+            <TagdijID>100</TagdijID>
+            <OlvasoID>101</OlvasoID>
+            <Datum>2024-01-01</Datum>
+            <Kedvezmenyes>Igen</Kedvezmenyes>
+            <FizetesiMod>Készpénz</FizetesiMod>
+        </Fizetes>
+        <Fizetes>
+            <TagdijID>100</TagdijID>
+            <OlvasoID>102</OlvasoID>
+            <Datum>2024-08-05</Datum>
+            <Kedvezmenyes>Nem</Kedvezmenyes>
+            <FizetesiMod>Bankkártya</FizetesiMod>
+        </Fizetes>
+        <Fizetes>
+            <TagdijID>100</TagdijID>
+            <OlvasoID>103</OlvasoID>
+            <Datum>2024-01-10</Datum>
+            <Kedvezmenyes>Igen</Kedvezmenyes>
+            <FizetesiMod>Átutalás</FizetesiMod>
+        </Fizetes>
+    </Fizetesek>
+</KonyvtariRendszer>

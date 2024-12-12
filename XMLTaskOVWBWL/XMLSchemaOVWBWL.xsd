@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- Típusok -->
+    <xs:simpleType name="TelefonSzamTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\+?\d{1,3}( \d{1,4}){2,3}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="KolcsonozhetoTipus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="igen" />
+            <xs:enumeration value="nem" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="KonyvtariRendszer">
+        <xs:complexType>
+            <xs:sequence>
+
+                <!-- Könyvek -->
+                <xs:element name="Konyvek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Konyv" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="KonyvID" type="xs:integer" />
+                                        <xs:element name="Cim" type="xs:string" />
+                                        <xs:element name="Szerzo" type="xs:string" />
+                                        <xs:element name="KiadasEve" type="xs:integer" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Példányok -->
+                <xs:element name="Peldanyok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Peldany" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="LeltariSzam" type="xs:string" />
+                                        <xs:element name="KonyvID" type="xs:integer" />
+                                        <xs:element name="Allapot" type="xs:string" />
+                                        <xs:element name="Polcszam" type="xs:string" />
+                                        <xs:element name="Kolcsonozheto" type="KolcsonozhetoTipus" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Kiadók -->
+                <xs:element name="Kiadok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Kiado" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="KiadoID" type="xs:integer" />
+                                        <xs:element name="Nev" type="xs:string" />
+                                        <xs:element name="Szekhely" type="xs:string" />
+                                        <xs:element name="Telefonszam" type="TelefonSzamTipus" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Olvasók -->
+                <xs:element name="Olvasok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Olvaso" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="OlvasoID" type="xs:integer" />
+                                        <xs:element name="Nev">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Vezeteknev" type="xs:string" />
+                                                    <xs:element name="Keresztnev" type="xs:string" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Lakcim" type="xs:string" />
+                                        <xs:element name="Telefonszam" type="TelefonSzamTipus" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Tagdíjak -->
+                <xs:element name="Tagdijak">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Tagdij" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="TagdijID" type="xs:integer" />
+                                        <xs:element name="Osszeg" type="xs:integer" />
+                                        <xs:element name="Kedvezmeny" type="xs:integer" />
+                                    </xs:sequence>
+                                    <xs:attribute name="ev" type="xs:gYear" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                 <!-- Kiadasok -->
+                <xs:element name="Kiadasok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Kiadja" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="KonyvID" type="xs:integer" />
+                                        <xs:element name="KiadoID" type="xs:integer" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Kolcsonzesek -->
+                <xs:element name="Kolcsonzesek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Kolcsonzi" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="KolcsonzesID" type="xs:string" />
+                                        <xs:element name="OlvasoID" type="xs:integer" />
+                                        <xs:element name="LeltariSzam" type="xs:string" />
+                                        <xs:element name="Datum" type="xs:date" />
+                                        <xs:element name="Visszahozva" type="xs:date" />
+                                        <xs:element name="Buntetes" type="xs:integer" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Fizetesek -->
+                <xs:element name="Fizetesek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Fizetes" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="TagdijID" type="xs:integer" />
+                                        <xs:element name="OlvasoID" type="xs:integer" />
+                                        <xs:element name="Datum" type="xs:date" />
+                                        <xs:element name="Kedvezmenyes">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="Igen" />
+                                                    <xs:enumeration value="Nem" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="FizetesiMod">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="Készpénz" />
+                                                    <xs:enumeration value="Bankkártya" />
+                                                    <xs:enumeration value="Átutalás" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+
+        <!-- Egyedi kulcsok és referenciák -->
+        <xs:key name="UniqueKonyvID">
+            <xs:selector xpath="Konyvek/Konyv" />
+            <xs:field xpath="KonyvID" />
+        </xs:key>
+        <xs:key name="UniqueKiadoID">
+            <xs:selector xpath="Kiadok/Kiado" />
+            <xs:field xpath="KiadoID" />
+        </xs:key>
+        <xs:key name="UniqueLeltariSzam">
+            <xs:selector xpath="Peldanyok/Peldany" />
+            <xs:field xpath="LeltariSzam" />
+        </xs:key>
+        <xs:key name="UniqueOlvasoID">
+            <xs:selector xpath="Olvasok/Olvaso" />
+            <xs:field xpath="OlvasoID" />
+        </xs:key>
+        <xs:key name="UniqueKolcsonzesID">
+            <xs:selector xpath="Kolcsonzesek/Kolcsonzi" />
+            <xs:field xpath="KolcsonzesID" />
+        </xs:key>
+        <xs:key name="UniqueTagdijID">
+            <xs:selector xpath="Tagdijak/Tagdij" />
+            <xs:field xpath="TagdijID" />
+        </xs:key>
+
+        <!-- Hivatkozások -->
+        <xs:keyref name="KonyvPeldanyReferencia" refer="UniqueKonyvID">
+            <xs:selector xpath="Peldanyok/Peldany" />
+            <xs:field xpath="KonyvID" />
+        </xs:keyref>
+        <xs:keyref name="KiadoKonyvReferencia" refer="UniqueKiadoID">
+            <xs:selector xpath="Kiadasok/Kiadja" />
+            <xs:field xpath="KiadoID" />
+        </xs:keyref>
+        <xs:keyref name="OlvasoKolcsonzesReferencia" refer="UniqueOlvasoID">
+            <xs:selector xpath="Kolcsonzesek/Kolcsonzi" />
+            <xs:field xpath="OlvasoID" />
+        </xs:keyref>
+        <xs:keyref name="PeldanyKolcsonzesReferencia" refer="UniqueLeltariSzam">
+            <xs:selector xpath="Kolcsonzesek/Kolcsonzi" />
+            <xs:field xpath="LeltariSzam" />
+        </xs:keyref>
+        <xs:keyref name="FizetesTagdijReferencia" refer="UniqueTagdijID">
+            <xs:selector xpath="Fizetesek/Fizetes" />
+            <xs:field xpath="TagdijID" />
+        </xs:keyref>
+    </xs:element>
+</xs:schema>

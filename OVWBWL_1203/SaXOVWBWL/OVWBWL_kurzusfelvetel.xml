@@ -1,0 +1,53 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<kurzusfelvetel tanev="2024_2025 I." egyetem="ME">
+    <hallgato id="OVWBWL">
+        <hnev>Kurucz Milán</hnev>
+        <szulev>2001-08-22</szulev>
+        <szak evf="5">Mérnökinformatikus</szak>
+    </hallgato>
+    <kurzusok>
+        <kurzus id="MEIKMUSZAN1" nyelv="angol">
+            <kurzusnev>Angol Szaknyelv I.</kurzusnev>
+            <kredit>0</kredit>
+            <hely>A/5 106.</hely>
+            <idopont>Hétfő 12:00-14:00</idopont>
+            <oktato>Pásztor Krisztina</oktato>
+        </kurzus>
+        <kurzus id="GEIL335-B2">
+            <kurzusnev>Mobil Programozás alapok</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In/101</hely>
+            <idopont>Hétfő 16:00-18:00</idopont>
+            <oktato>Agárdi Anita</oktato>
+        </kurzus>
+        <kurzus id="GEVAU242-B2">
+            <kurzusnev>Multimédia Rendszerek</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In/200</hely>
+            <idopont>Kedd 12:00-14:00</idopont>
+            <oktato>Dr. Varga Attila Károly</oktato>
+        </kurzus>
+        <kurzus id="GEIAL32K-B2">
+            <kurzusnev>Webes adatkezelő környezetek</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In/103</hely>
+            <idopont>Kedd 16:00-18:00</idopont>
+            <oktato>Dr. Bednarik László</oktato>
+        </kurzus>
+        <kurzus id="GEIAL30F-B2">
+            <kurzusnev>UNIX rendszergazda</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In/202</hely>
+            <idopont>Kedd 17:00-19:00</idopont>
+            <oktato>Dr. Baksa Attila</oktato>
+        </kurzus>
+        <kurzus id="GEIAK130-B2">
+            <kurzusnev>Mesterséges Intelligencia</kurzusnev>
+            <kredit>5</kredit>
+            <hely>A1/XXXII.</hely>
+            <idopont>Szerda 16:00-18:00</idopont>
+            <oktato>Pásztor Krisztina</oktato>
+        </kurzus>
+    </kurzusok>
+</kurzusfelvetel>
